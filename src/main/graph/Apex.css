@@ -1,0 +1,28 @@
+/* Apex.css */
+
+.container {
+  position: relative;
+  top: -588px;
+  left: 350px;
+  display: flex;
+  justify-content: space-evenly;
+  margin:10px;
+  max-width: 1100px;
+}
+
+#bubble-chart,
+#pie-chart {
+  width: 105%;
+  
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+#pie-chart h4,
+#bubble-chart h4 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Add more styling as needed for your specific design */

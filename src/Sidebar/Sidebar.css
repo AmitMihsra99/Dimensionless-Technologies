@@ -1,0 +1,148 @@
+/* Sidebar.css */
+
+.sidebar {
+    width: 260px;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: -5%;
+    height: 700px;   
+    
+  }
+  
+  .top {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .top img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+  }
+  
+  .bottom {
+    padding: 20px;
+  }
+  
+  .bottom p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .bottom li {
+    margin-bottom: 10px;
+  }
+  
+  .bottom a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px; 
+      &:hover{
+         background-color: aqua;
+         border-radius: 25px;
+      }
+  }
+  
+  .bottom a svg {
+    margin-right: 10px; 
+    font-size: 20px; 
+    color: #132e4a; 
+  }
+  
+  /* Media queries for responsiveness */
+  
+  @media (max-width:1193px){
+    .sidebar {
+        display:flex;
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+        top:-59px;
+        background-color:transparent;
+        height: 0px;
+        
+      }
+      .bottom p {
+        display: none;
+      }
+  
+      .bottom ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .bottom li {
+        margin-bottom: 10px;
+      }
+      
+      .bottom a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 12px;
+        padding: 10px 15px; 
+          &:hover{
+             background-color: aqua;
+             border-radius: 25px;
+          }
+      }
+     
+      .bottom a svg {
+        margin-right: 10px;
+        font-size: 10px; 
+        color: #132e4a; 
+      }
+    }
+
+
+  @media (max-width: 992px) {
+    .sidebar {
+      width: 100%;
+      margin-top: 0;
+    }
+  
+    .top img {
+      max-width: 100px; 
+    }
+  
+    .bottom a svg {
+      font-size: 18px; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .sidebar {
+      position: relative; 
+      margin-top: 0;
+      left: -60px;
+    }
+    
+    .top img {
+      max-width: 80px; 
+    }
+  
+    .bottom a {
+      font-size: 10px; 
+    }
+  
+    .bottom a svg {
+     display: none;
+    }
+  }
+  
